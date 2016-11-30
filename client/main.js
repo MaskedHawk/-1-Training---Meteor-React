@@ -6,14 +6,14 @@
 // Import REACT
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
+import ImageList from './components/image_list';
 
 // Create a component
-
 const App = () => {
     return (
         <div>
-            React App #2
+            <ImageList />
         </div>
     );
 };
@@ -21,4 +21,4 @@ const App = () => {
 // Render this component to the screen
 Meteor.startup(() => {
     ReactDOM.render(<App />, document.querySelector('.container'));
-})
+});
